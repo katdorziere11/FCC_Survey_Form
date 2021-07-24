@@ -1,0 +1,198 @@
+
+
+body {
+    font-family: "Press Start 2P", cursive;
+    background-image: url("https://c4.wallpaperflare.com/wallpaper/648/356/892/one-piece-dragon-ball-dragon-ball-super-naruto-shippuuden-wallpaper-preview.jpg");
+    background-size: contain;
+    background-color: rgb(92, 131, 165);
+    
+}
+
+.name,
+.email,
+.age {
+    display: flex;
+    margin: 10px;
+    font-size: 1rem;
+}
+
+.info { 
+    margin-top: 15px;
+}
+
+#name-label {
+    align-self: center;
+}
+
+.frequency {
+    display: flex;
+    margin: 10px;
+}
+
+.often {
+    width: 50%;
+    text-align: center;
+}
+
+.select {
+    align-self: center;
+}
+
+select {
+    width: 150px;
+    height: 40px;
+    font-size: 18px;
+}
+
+.preferred {
+    display: flex;
+    margin: 10px;
+}
+
+.prefer {
+    width: 50%;
+    text-align: center;
+    margin-right: 20px;
+}
+
+.anime, .manga, .both {
+    margin: 5px 0px 5px;
+}
+
+.radio {
+    margin-top: 15px;
+    font-size: 15px;
+}
+
+.watched {
+    display: flex;
+    margin: 10px;
+}
+
+.watch {
+    width: 50%;
+    text-align: center;
+}
+
+.textarea {
+    display: flex;
+    align-self: center;
+    margin: 10px;
+}
+
+.enjoy {
+    text-align: center;
+    margin-left: auto;
+    width: 70%;
+    margin-right: auto;
+    margin-bottom: auto;
+}
+
+textarea {
+    width: 100%;
+}
+
+.textbox {
+    align-self: center;
+    width: 100%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 13px;
+    border-style: solid;
+    border-color: gray;
+    border-radius: 20px;
+    background-color: whitesmoke;
+
+}
+
+#submit {
+    margin: 10px;
+    padding: 10px;
+    font-size: 13px;
+    font-family: "Press Start 2P", cursive;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    text-shadow: 2px 2px 3px #000000;
+    
+}
+
+
+
+
+@media only screen and (max-width: 600px) {
+    html {
+        font-size: 16px;
+    }
+
+    
+    .name,
+    .email,
+    .age {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    #name-label {
+        align-self: flex-start;
+    }
+
+    .frequency {
+        flex-direction: column;
+    }
+
+    .often,
+    .prefer,
+    .watch {
+        width: 100%;
+    }
+
+    .watched {
+        flex-direction: column;
+    }
+
+    select {
+        width: 200px;
+        height: 25px;
+    }
+
+    .preferred {
+        flex-direction: column;
+    }
+
+    .radio {
+        margin: auto;
+        font-size: 15px;
+    }
+    .enjoy {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .textarea {
+        flex-direction: column;
+    }
+
+    #textbox {
+        width: 100%;
+    }
+
+    .textbox {
+        width: 100%;
+    }
+
+    #submit {
+        font-size: 15px;
+        padding: 5px;
+    }
+
+    
+}

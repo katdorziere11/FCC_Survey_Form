@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Anime Survey</title>
+        <link href="style.css" rel="stylesheet" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+
+    <body>
+        <div class="header">
+            <h1 id="title">
+                Anime Survey
+            </h1>
+            <p id="description">
+                Share Your Anime Experience!
+            </p>
+        </div>
+
+        <form id="survey-form">
+            <div class="info">
+                <div class="name">
+                    <label for="name" id="name-label">
+                        Name:
+                    </label>
+                    <input
+                        type="text"
+                        id="name"
+                        name="Name"
+                        placeholder="enter your name"
+                        required
+                    />
+                </div>
+
+                <div class="email">
+                    <label for="email" id="email-label">
+                        E-Mail:
+                    </label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="E-Mail"
+                        placeholder="example@email.com"
+                        required
+                    />
+                </div>
+
+                <div class="age">
+                    <label for="number" id="number-label">
+                        Age:
+                    </label>
+                    <input
+                        type="number"
+                        id="number"
+                        name="Age"
+                        placeholder="enter your age"
+                        min="0"
+                        max="100"
+                        required
+                    />
+                </div>
+            </div>
+            <div class="frequency" id="dropdown">
+                <div class="often">
+                    <h3>How Often Do You Watch Anime?</h3>
+                </div>
+
+                <div class="select">
+                    <select name="dropdown">
+                        <option value="Rarely" selected>
+                            Rarely
+                        </option>
+                        <option value="Sometimes">
+                            Sometimes
+                        </option>
+                        <option value="Frequently">
+                            Frequently
+                        </option>
+                        <option value="All the time">
+                            All the time
+                        </option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="preferred">
+                <div class="prefer">
+                    <h3>Which Do You Prefer?</h3>
+                </div>
+                <div class="radio">
+                    <div class="manga">
+                        <input
+                            type="radio"
+                            id="choice1"
+                            name="radiobutton"
+                            value="Manga"
+                        />
+                        <label for="choice1">Manga</label>
+                    </div>
+
+                    <div class="Anime">
+                        <input
+                            type="radio"
+                            id="choice2"
+                            name="radiobutton"
+                            value="Anime"
+                        />
+                        <label for="choice2">Anime</label>
+                    </div>
+
+                    <div class="both">
+                        <input
+                            type="radio"
+                            id="choice3"
+                            name="radiobutton"
+                            value="Both"
+                        />
+                        <label for="choice3">Both</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="watched">
+                <div class="watch">
+                    <h3>Animes You've Watched:</h3>
+                    <p>*Select all that apply*</p>
+                </div>
+                <div class="checkbox">
+                    <div>
+                        <input
+                            type="checkbox"
+                            id="box1"
+                            name="Naruto"
+                            value="Naruto"
+                        />
+                        <label for="box1">Naruto</label>
+                    </div>
+                    <div>
+                        <input
+                            type="checkbox"
+                            id="box2"
+                            name="Attack on Titan"
+                            value="Attack on Titan"
+                        />
+                        <label for="box1">Attack on Titan</label>
+                    </div>
+                    <div>
+                        <input
+                            type="checkbox"
+                            id="box3"
+                            name="Death Note"
+                            value="Death Note"
+                        />
+                        <label for="box1">Death Note</label>
+                    </div>
+                    <div>
+                        <input
+                            type="checkbox"
+                            id="box4"
+                            name="One Punch Man"
+                            value="One Punch Man"
+                        />
+                        <label for="box1">One Punch Man</label>
+                    </div>
+                    <div>
+                        <input
+                            type="checkbox"
+                            id="box5"
+                            name="HunterxHunter"
+                            value="HunterxHunter"
+                        />
+                        <label for="box1">HunterxHunter</label>
+                    </div>
+                    <div>
+                        <input
+                            type="checkbox"
+                            id="box6"
+                            name="Fullmetal Alchemist"
+                            value="Fullmetal Alchemist"
+                        />
+                        <label for="box1">Fullmetal Alchemist</label>
+                    </div>
+                    <div>
+                        <input
+                            type="checkbox"
+                            id="box7"
+                            name="One Piece"
+                            value="One Piece"
+                        />
+                        <label for="box1">One Piece</label>
+                    </div>
+
+                    <div>
+                        <input
+                            type="checkbox"
+                            id="box8"
+                            name="Other"
+                            value="Other"
+                        />
+                        <label for="box8">Other</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="textarea">
+                <label for="textbox">
+                    <h3 class="enjoy">
+                        What Do You Enjoy Most About Anime?
+                    </h3>
+                </label>
+                <div class="textbox">
+                    <textarea
+                        id="textbox"
+                        name="textbox"
+                        rows="7"
+                        placeholder="Please enter your thoughts here :)..."
+                    ></textarea>
+                </div>
+            </div>
+
+            <button type="submit" value="Submit" id="submit">
+                Submit
+            </button>
+        </form>
+    </body>
+</html>
